@@ -11,8 +11,6 @@ Clone the repository:
     
 Configure your bashrc:
 
-    echo "#PS JSHOP2 homework" >> ~/.bashrc
-    echo "export JSHOP2=~/JSHOP" >> ~/.bashrc
     echo "export CLASSPATH=~/JSHOP/bin/antlr.jar:~/JSHOP/bin/JSHOP2.jar:." >> ~/.bashrc
     
 Compile:
