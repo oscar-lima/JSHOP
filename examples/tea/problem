@@ -1,8 +1,4 @@
-(
-	defproblem problem tea 
-
-	((water w) (cup c)) 
-	
-	((pour w))
-	
+(defproblem problem tea
+((have water) (have kettle) (have sugar) (have tea-bag) (have cup) (have stirrer))
+((make-tea water kettle sugar tea-bag cup stirrer))
 )

@@ -1,19 +1,26 @@
-(	
-	defdomain tea 
-	( 
-
-		(
-			:operator
-			(!put-inside ?w ?c) 
-			() 
-			((water ?w))
-			((water-at w c))
-		) 
-	
-		(
-			:method (pour ?w) 
-			((cup ?c) (water ?w)) 
-			((!put-inside ?w ?c))
-		)
-	) 
+(defdomain tea (
+(:operator (!put-in ?x ?y)
+			((have ?x) (have ?y))
+			((have ?x))
+			((in ?x ?y))
 )
+(:operator (!warm ?kettle)
+			((in water kettle))
+			()
+			((have water)(is-warm kettle))
+)
+(:operator (!stir ?stirrer ?cup)
+			((have stirrer)(have cup)(in water cup)(in sugar cup)(in tea-bag cup))
+			()
+			((is-stirred cup)(is-ready tea))
+)
+
+(:method (make-tea ?water ?kettle ?sugar ?tea-bag ?cup ?stirrer)
+		((have ?water) (have ?kettle) (have ?sugar) (have ?tea-bag) (have ?cup)(have ?stirrer))
+		((!put-in ?water ?kettle)(!warm ?kettle)(!put-in ?water ?cup)(!put-in ?sugar ?cup)(!put-in ?tea-bag ?cup)(!stir ?stirrer ?cup))
+		
+		)
+)
+)
+
+
