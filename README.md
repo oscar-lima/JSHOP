@@ -5,6 +5,8 @@ This repository was created to make tea with jshop, a classical planning problem
 
 So here are the steps, enjoy.
 
+NOTE: It also contains many other examples on jshop usage, please read the README file for more info on them.
+
 Clone the repository:
 
     cd ~
