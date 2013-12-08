@@ -1,5 +1,5 @@
-JSHOP installation
-==================
+JSHOP
+=====
 
 This repository was created to make tea with jshop, a classical planning problem which will introduce you to this hierarchichal planning approach.
 
