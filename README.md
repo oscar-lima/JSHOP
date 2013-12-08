@@ -1,8 +1,9 @@
-JSHOP2 PS assignment
-====================
+JSHOP
+=====
 
-JSHOP installation
-==================
+This repository was created to make tea with jshop, a classical planning problem which will introduce you to this hierarchichal planning approach.
+
+So here are the steps, enjoy.
 
 Clone the repository:
 
@@ -18,7 +19,7 @@ Compile:
     cd ~/JSHOP
     make
     
-If no erros then installation is done, congrats! ;)
+If no errors then installation is done, congrats! ;)
 
 JSHOP usage
 ===========
@@ -30,12 +31,7 @@ run the examples by doing make command:
         
 Open README file for more details.
 
-Now try to run the tea template:
+Now try to run the tea problem:
 
         cd ~/JSHOP
         make tea
-        
-Solving homework
-================
-
-First try to run basic example, see the files and try to understand what is happening there, the forall example is also very nice it is about a truck that have to transport packages between two cities
